@@ -24,11 +24,7 @@ export default function WorkSection() {
           <h4 className={classes.description}>
             Contacta conmigo, respnderé a la brevedad.
           </h4>
-          <form
-            method="POST"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-          >
+          <form method="POST" data-netlify="true">
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
@@ -60,41 +56,16 @@ export default function WorkSection() {
                   rows: 5,
                 }}
               />
+
               <GridItem xs={12} sm={12} md={4}>
                 <Button type="submit" color="primary">
                   Enviar
                 </Button>
               </GridItem>
             </GridContainer>
-          </form>
-          <form name="contact" method="POST" data-netlify="true">
-            <p>
-              <label>
-                Your Name: <input type="text" name="name" />
-              </label>
-            </p>
-            <p>
-              <label>
-                Your Email: <input type="email" name="email" />
-              </label>
-            </p>
-            <p>
-              <label>
-                Your Role:{" "}
-                <select name="role[]" multiple>
-                  <option value="leader">Leader</option>
-                  <option value="follower">Follower</option>
-                </select>
-              </label>
-            </p>
-            <p>
-              <label>
-                Message: <textarea name="message"></textarea>
-              </label>
-            </p>
-            <p>
-              <button type="submit">Send</button>
-            </p>
+            <div className="field">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
           </form>
         </GridItem>
       </GridContainer>
