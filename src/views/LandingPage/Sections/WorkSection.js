@@ -24,7 +24,7 @@ export default function WorkSection() {
           <h4 className={classes.description}>
             Contacta conmigo, respnderé a la brevedad.
           </h4>
-          <form name="contact" method="POST" data-netlify="true" >
+          <form name="contact" method="POST" data-netlify="true">
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
@@ -57,7 +57,9 @@ export default function WorkSection() {
                 }}
               />
               <GridItem xs={12} sm={12} md={4}>
-                <Button type="submit" color="primary">Enviar</Button>
+                <Button type="submit" color="primary">
+                  Enviar
+                </Button>
               </GridItem>
             </GridContainer>
           </form>
