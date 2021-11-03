@@ -24,7 +24,8 @@ export default function WorkSection() {
           <h4 className={classes.description}>
             Contacta conmigo, respnderé a la brevedad.
           </h4>
-          <form method="POST" data-netlify="true">
+          <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
