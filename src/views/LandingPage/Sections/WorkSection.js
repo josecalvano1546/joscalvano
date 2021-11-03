@@ -56,16 +56,13 @@ export default function WorkSection() {
                   rows: 5,
                 }}
               />
-
+              <div data-netlify-recaptcha="true"></div>
               <GridItem xs={12} sm={12} md={4}>
                 <Button type="submit" color="primary">
                   Enviar
                 </Button>
               </GridItem>
             </GridContainer>
-            <div className="field">
-              <div data-netlify-recaptcha="true"></div>
-            </div>
           </form>
         </GridItem>
       </GridContainer>
