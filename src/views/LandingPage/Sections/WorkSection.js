@@ -27,14 +27,7 @@ export default function WorkSection() {
           <form name="contact" method="POST" data-netlify="true">
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <CustomInput
-                  formControlProps={{
-                    fullWidth: true,
-                    type: "hidden",
-                    name: "form-name",
-                    value: "contact",
-                  }}
-                />
+                <input type="hidden" name="form-name" value="contact" />
                 <CustomInput
                   labelText="Tu nombre"
                   id="name"
