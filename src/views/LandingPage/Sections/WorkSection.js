@@ -66,7 +66,7 @@ export default function WorkSection() {
               <div data-netlify-recaptcha="true"></div>
               <GridItem xs={12} sm={12} md={4}>
                 <Button
-                  //  type="submit"
+                  type="submit"
                   color="primary"
                   onClick={() => myFunction()}
                 >
