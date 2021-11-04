@@ -30,9 +30,9 @@ export default function WorkSection() {
                 <CustomInput
                   formControlProps={{
                     fullWidth: true,
-                    type="hidden",
-                  name="form-name",
-                  value="contact",
+                    type: "hidden",
+                    name: "form-name",
+                    value: "contact",
                   }}
                 />
                 <CustomInput
