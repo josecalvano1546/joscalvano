@@ -1,20 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-
+import Check from "@material-ui/icons/Check";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 import Button from "components/CustomButtons/Button.js";
-
+import SnackbarContent from "components/Snackbar/SnackbarContent";
 import styles from "assets/jss/material-kit-react/views/landingPageSections/workStyle.js";
 
 const useStyles = makeStyles(styles);
-
 export default function WorkSection() {
+  const [alert, setAlert] = useState(false);
+  const myFunction = () => {
+    {
+      console.log("se ejecuta");
+    }
+    setAlert(true);
+  };
   const classes = useStyles();
   return (
     <div className={classes.section}>
@@ -59,12 +65,31 @@ export default function WorkSection() {
               />
               <div data-netlify-recaptcha="true"></div>
               <GridItem xs={12} sm={12} md={4}>
-                <Button type="submit" color="primary">
+                <Button
+                  //  type="submit"
+                  color="primary"
+                  onClick={() => myFunction()}
+                >
                   Enviar
                 </Button>
               </GridItem>
             </GridContainer>
           </form>
+          <div>
+            {alert ? (
+              <SnackbarContent
+                message={
+                  <span>
+                    <b>SUCCESS ALERT:</b> You{"'"}ve got some friends nearby,
+                    stop looking at your phone and find them...
+                  </span>
+                }
+                close
+                color="success"
+                icon={Check}
+              />
+            ) : null}
+          </div>
         </GridItem>
       </GridContainer>
     </div>
