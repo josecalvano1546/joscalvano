@@ -71,7 +71,8 @@ export default function CustomInput(props) {
           disabled: classes.disabled,
           underline: underlineClasses,
         }}
-        id={id}
+        type={id}
+        name={id}
         {...inputProps}
       />
     </FormControl>
