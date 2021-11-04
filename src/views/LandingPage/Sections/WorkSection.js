@@ -28,11 +28,11 @@ export default function WorkSection() {
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
-                  type="hidden"
-                  name="form-name"
-                  value="contact"
                   formControlProps={{
                     fullWidth: true,
+                    type="hidden",
+                  name="form-name",
+                  value="contact",
                   }}
                 />
                 <CustomInput
