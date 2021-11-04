@@ -21,32 +21,32 @@ export default function Parallax(props) {
   //React spring
   const styles = useSpring({
     loop: { reverse: true },
-    config: { duration: 2000 },
+    config: { duration: 4000 },
     from: { y: 20, x: 0 },
     to: { y: 50, x: 20 },
   });
   const styles2 = useSpring({
     loop: { reverse: true },
-    config: { duration: 2500 },
+    config: { duration: 4500 },
     from: { y: 20, x: 0 },
     to: { y: 50, x: 20 },
   });
   const one2 = useSpring({
     loop: { reverse: true },
-    config: { duration: 2000 },
+    config: { duration: 4000 },
     from: { y: 50, x: 40 },
     to: { y: 0, x: 10 },
   });
 
   const two = useSpring({
     loop: { reverse: true },
-    config: { duration: 1700 },
+    config: { duration: 3700 },
     from: { y: 20, x: 0 },
     to: { y: 50, x: -9 },
   });
   const one = useSpring({
     loop: { reverse: true },
-    config: { duration: 2500 },
+    config: { duration: 4500 },
     from: { y: 50, x: 40 },
     to: { y: 0, x: 10 },
   });

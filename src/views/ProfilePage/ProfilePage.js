@@ -105,7 +105,7 @@ export default function ProfilePage() {
                     <img src={profile} alt="..." className={imageClasses} />
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Jose Calvano</h3>
+                    <h3 className={classes.title}>José Calvano</h3>
                     <h6>Front-End developer</h6>
                     <Button justIcon link className={classes.margin5}>
                       <i className="fab fa-linkedin-in"></i>
@@ -119,10 +119,10 @@ export default function ProfilePage() {
             </GridContainer>
             <div className={classes.description}>
               <p>
-                Soy José Calvano, desarrollador front-end profesional con más de
-                tres años de experiencia en la gestión, desarrollo y pruebas de
-                aplicaciones web y móviles. Autodidacta, creativo y en busca de
-                nuevos desafíos.
+                Soy José Calvano Ing. en sistemas de información y desarrollador
+                front-end profesional con más de tres años de experiencia en la
+                gestión, desarrollo y pruebas de aplicaciones web y móviles.
+                Autodidacta, creativo y en busca de nuevos desafíos.
               </p>
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={8}>
