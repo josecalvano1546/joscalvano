@@ -80,8 +80,7 @@ export default function WorkSection() {
               <SnackbarContent
                 message={
                   <span>
-                    <b>SUCCESS ALERT:</b> You{"'"}ve got some friends nearby,
-                    stop looking at your phone and find them...
+                    <b>CORREO ENVIADO:</b> Se envio el correo con éxito.
                   </span>
                 }
                 close

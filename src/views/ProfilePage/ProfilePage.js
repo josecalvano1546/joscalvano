@@ -107,10 +107,26 @@ export default function ProfilePage() {
                   <div className={classes.name}>
                     <h3 className={classes.title}>José Calvano</h3>
                     <h6>Front-End developer</h6>
-                    <Button justIcon link className={classes.margin5}>
+                    <Button
+                      justIcon
+                      link
+                      className={classes.margin5}
+                      onClick={() => {
+                        window.location.href =
+                          "https://www.linkedin.com/in/josecalvano/";
+                      }}
+                    >
                       <i className="fab fa-linkedin-in"></i>
                     </Button>
-                    <Button justIcon link className={classes.margin5}>
+                    <Button
+                      justIcon
+                      link
+                      className={classes.margin5}
+                      onClick={() => {
+                        window.location.href =
+                          "https://github.com/josecalvano1546";
+                      }}
+                    >
                       <i className={"fab fa-github"} />
                     </Button>
                   </div>
