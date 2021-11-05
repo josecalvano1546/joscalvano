@@ -34,7 +34,7 @@ export default function Footer(props) {
         </div>
         <div className={classes.left}>
           <i class="fas fa-map-marker-alt"></i>
-         {" "} Corrientes, Argentina
+         {" "} Corrientes, Argentina.
         </div>
       </div>
     </footer>
